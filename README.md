@@ -8,7 +8,6 @@ Länge des Spiels: 1h
 
 - Rundenbasiert
 - Reihenfolge ausgewürfelt auf einem Initiativen-System
-<br />
 - 4 Positionen (1-4) 
 - Pro runde hat jede einheit eine aktion:
     - Angriff
