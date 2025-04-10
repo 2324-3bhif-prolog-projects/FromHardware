@@ -78,6 +78,7 @@ Man kann folgende Sachen ausrüsten:
 - Primary Weapon
 - Secondary Weapon
 - Rings
+- Talisman
 - Flasks
 
 Diese können verschiedene Eigenschaften und boni beinhalten
