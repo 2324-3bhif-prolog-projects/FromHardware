@@ -1,0 +1,15 @@
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\bin\Debug\net6.0\FightingTest.exe
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\bin\Debug\net6.0\FightingTest.deps.json
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\bin\Debug\net6.0\FightingTest.runtimeconfig.json
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\bin\Debug\net6.0\FightingTest.dll
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\bin\Debug\net6.0\FightingTest.pdb
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\FightingTest.csproj.AssemblyReference.cache
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\FightingTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\FightingTest.AssemblyInfoInputs.cache
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\FightingTest.AssemblyInfo.cs
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\FightingTest.csproj.CoreCompileInputs.cache
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\FightingTest.dll
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\refint\FightingTest.dll
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\FightingTest.pdb
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\FightingTest.genruntimeconfig.cache
+C:\Users\danie\Documents\loal\FromHardware\test\FightingTest\FightingTest\obj\Debug\net6.0\ref\FightingTest.dll
