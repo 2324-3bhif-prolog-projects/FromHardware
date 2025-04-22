@@ -32,26 +32,25 @@ public class Ability
         StressEffect = stressEffect;
     }
 
-    public void Use(Character user, Character target, AbilityType type)
+    public void Use(Character user, Character target, AbilityType type, bool isPlayer)
     {
         int attackRollRaw = Roll(1, 21);
         int attackRoll = attackRollRaw + user.Accuracy;
         PhraseManager phraseMgr = new PhraseManager();
+        double power = Roll(PowerRange.min, PowerRange.max);
         if (type == AbilityType.Attack)
         {
             if (attackRoll >= target.ArmorClass)
             {
-                double damage = Roll(PowerRange.min, PowerRange.max);
-
                 if (attackRollRaw == 20)
                 {
-                    damage *= 1.5;
+                    power *= 1.5;
                     Console.WriteLine("Dein Angriff verursacht kritischen Schaden!");
                 }
-                target.HP -= (int)damage;
+                target.HP -= (int)power;
                 target.Stress += StressEffect;
 
-                Console.WriteLine($"[Würfelergebnis: {attackRollRaw} + {user.Accuracy} (Treffer)] – Minos erleidet {damage} Schaden.");
+                Console.WriteLine($"[Würfelergebnis: {attackRollRaw} + {user.Accuracy} (Treffer)] – Minos erleidet {power} Schaden.");
                 Console.WriteLine();
                 if(target.HP > 0 && target.Type == CharacterType.Boss)
                 {
@@ -70,20 +69,56 @@ public class Ability
         }
         else if (type == AbilityType.Heal)
         {
-            int power = Roll(PowerRange.min, PowerRange.max);
-
-            user.HP += power;
+            user.HP += (int)power;
             Console.WriteLine($"Du betest und erhältst {power} HP wieder.");
         }
-        else if (type == AbilityType.Buff)
+        else if (type == AbilityType.Buff || type == AbilityType.Debuff)
         {
-            int power = Roll(PowerRange.min, PowerRange.max);
-
-            if (TypeBuff == BuffType.Accuracy)
+            Console.ForegroundColor = ConsoleColor.Green;
+            if (type == AbilityType.Debuff)
             {
-                user.Accuracy += 5;
-                Console.WriteLine("Dante fokussiert seinen Geist. Kein Zweifel, kein Zögern. Nur Ziel und Wille.");
+                power *= -1;
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                if (!isPlayer)
+                {
+                    Console.WriteLine("Für einen Moment flackert etwas in seinen Augen – nicht Wut, sondern Zweifel. Seine gewaltige Gestalt bebt, als lasteten Jahrhunderte der Schuld auf seinen Schultern.");
+                    Console.WriteLine("„Was… habe ich getan…?“");
+                    Console.WriteLine("Die Kraft weicht aus seinem Griff, seine Stimme wird schwach. Der Richter beginnt zu wanken.");
+                }
             }
+            else
+            {
+                if (!isPlayer)
+                {
+                    Console.WriteLine("Minos’ Brust hebt sich, als ob ein Sturm in seinem Inneren tobt. Doch statt zu zerbrechen, richtet er sich auf – größer, furchteinflößender denn je.");
+                    Console.WriteLine("„Eure Angst… nährt meine Macht.“");
+                    Console.WriteLine("Die Ketten um seinen Geist zerreißen – was bleibt, ist pures Zornfeuer.");
+                    Console.WriteLine("Minos entfesselt seinen Zorn.");
+                }
+            }
+            switch (TypeBuff)
+            {
+                case BuffType.Accuracy:
+                    target.Accuracy += (int)power;
+                    break;
+                case BuffType.Hp:
+                    target.MaxHP += (int)power;
+                    target.HP += (int)power;
+                    break;
+                case BuffType.Damage:
+                    target.damageMod += (int)power;
+                    break;
+                case BuffType.Stress:
+                    target.stressMod += (int)power;
+                    break;
+            }
+
+            if (isPlayer)
+            {
+                Console.WriteLine(Description);
+            }
+            Console.WriteLine();
+            Console.ResetColor();
         }
     }
     public static int Roll(int min, int max)

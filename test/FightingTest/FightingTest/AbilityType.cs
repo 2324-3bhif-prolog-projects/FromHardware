@@ -5,6 +5,5 @@ public enum AbilityType
     Attack,
     Heal,
     Buff,
-    Debuff,
-    Stress
+    Debuff
 }

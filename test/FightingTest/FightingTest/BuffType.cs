@@ -2,5 +2,8 @@ namespace FightingTest;
 
 public enum BuffType
 {
-    Accuracy
+    Accuracy,
+    Hp,
+    Damage,
+    Stress
 }
