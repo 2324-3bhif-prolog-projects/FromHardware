@@ -10,8 +10,10 @@ public class Character
     public int Position { get; set; } // 1 = vorne, 4 = hinten
     public List<Ability> Abilities { get; private set; }
     public List<string> StatusEffects { get; private set; }
+    public int Accuracy { get; set; }
+    public CharacterType Type { get; private set; }
     
-    public Character(string name, int maxHP, int armorClass, int position, List<Ability> abilities)
+    public Character(string name, int maxHP, int armorClass, int position, List<Ability> abilities, CharacterType type)
     {
         Name = name;
         MaxHP = maxHP;
@@ -21,6 +23,7 @@ public class Character
         Position = position;
         Abilities = abilities;
         StatusEffects = new List<string>();
+        Type = type;
     }
 
     public bool IsAlive()
