@@ -19,16 +19,13 @@ hp_phrase_high([
     "Der Gegner wirkt selbstsicher und unbeeindruckt.",
     "Seine Haltung ist aufrecht – der Kampf hat noch kaum begonnen.",
     "Lachend fragt Minos dich ‚War das alles was du hast?‘",
-    "Minos steht gähnend vor dir.",
-    "Karontheus schlägt seine Flügel aus – unbeeindruckt.",
-    "Die Kreatur der Hoffnungslosigkeit regt sich kaum, als dein Hieb sie trifft."
+    "Minos steht gähnend vor dir."
 ]).
 hp_phrase_mid([
     "Blut tropft auf den Boden.",
     "Er beginnt zu schwanken, doch sein Blick bleibt entschlossen.",
     "Seine Bewegungen wirken langsamer.",
-    "Ein Kratzen ziert die sonst makellose Oberfläche seiner Haut.",
-    "Die Kreatur zittert leicht, aber ihre Bewegungen sind noch immer schleppend."
+    "Ein Kratzen ziert die sonst makellose Oberfläche seiner Haut."
 ]).
 hp_phrase_low([
     "Er taumelt und kann kaum noch stehen.",
@@ -37,9 +34,7 @@ hp_phrase_low([
     "Minos' Kinn sieht verschoben und gebrochen aus.",
     "Er wirkt wie eine Hülle seiner selbst.",
     "Er röchelt, sein Blick verschwimmt.",
-    "Sein Körper ist zerfetzt, sein Wille bricht – doch noch lebt er.",
-    "Karontheus' Flügel sind zerschlissen, sein Blick ist voller Qual.",
-    "Ein leises Gurgeln entweicht der Kreatur, als sie zu Boden sinkt."
+    "Sein Körper ist zerfetzt, sein Wille bricht – doch noch lebt er."
 ]).
 
 get_hp_phrase(CurrentHP, MaxHP, Phrase) :-
