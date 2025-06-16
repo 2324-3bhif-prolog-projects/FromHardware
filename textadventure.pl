@@ -985,9 +985,9 @@ chapter3_start_karontheus_fight :-
     player_state(Player),
     Enemy = char('Karontheus', 250, 250, 13, 1,
         [
-            ability('Sturm der Sehnsucht', 'Ein Wirbelwind aus zerbrochenen Träumen. (Hoher Schaden, hoher Stress)', [1,2], 18, 30, attack, 35, none),
-            ability('Peitsche der Begierde', 'Eine Kette aus Leiden schlägt nach dir. (Moderater Schaden, Debuff: Rüstung)', [1,2], 12, 22, attack, 10, armor),
-            ability('Verlorene Schönheit', 'Karontheus besinnt sich auf seine einstige Schönheit und heilt sich. (Buff: Heilung)', [1,2], 20, 30, heal, 0, hp)
+            ability('Sturm der Sehnsucht', 'Ein Wirbelwind aus zerbrochenen Träumen. (Hoher Schaden, hoher Stress)', [1,2], 15, 20, attack, 35, none),
+            ability('Peitsche der Begierde', 'Eine Kette aus Leiden schlägt nach dir. (Moderater Schaden, Debuff: Rüstung)', [1,2], 10, 15, attack, 10, armor),
+            ability('Verlorene Schönheit', 'Karontheus besinnt sich auf seine einstige Schönheit und heilt sich. (Buff: Heilung)', [1,2], 10, 20, heal, 0, hp)
         ], 0, 0, 0, 0, boss),
     ( start_fight(Player, Enemy) ->
         chapter3_after_karontheus_fight
