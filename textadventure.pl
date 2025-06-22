@@ -444,14 +444,7 @@ chapter1_alchemist_intro :-
 
 chapter1_virgil_encounter :-
     Lines = [
-        'Du kommst langsam wieder zu dir.',
-        '„Aah… mein Kopf…“ murmelst du benommen.',
-        'Langsam öffnest du die Augen. Um dich herum nur dichter Wald – uralte Bäume mit verdrehten Ästen, deren Rinde wie verbrannt wirkt. Der Himmel ist finster, durchzogen von rötlichen Schlieren, als hätte sich ein Fluch über diese Welt gelegt.',
-        'Plötzlich hörst du eine Stimme hinter dir.',
-        '„Hallo, Dante.“',
-        'Mit einem Ruck fährst du herum. Panik liegt in deinem Blick.',
-        'Ein fremder Schatten steht zwischen zwei Bäumen.',
-        '„Ich sehe, du bist erwacht.“'
+        
     ],
     pause_print(Lines),
     writeln('Was willst du fragen?'),
