@@ -3,7 +3,6 @@ C:\Users\danie\Documents\FromHardware\Finish\Game\Game\bin\Debug\net6.0\Game.dep
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\bin\Debug\net6.0\Game.runtimeconfig.json
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\bin\Debug\net6.0\Game.dll
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\bin\Debug\net6.0\Game.pdb
-C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\Game.csproj.AssemblyReference.cache
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\Game.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\Game.AssemblyInfoInputs.cache
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\Game.AssemblyInfo.cs
@@ -13,3 +12,4 @@ C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\refint\G
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\Game.pdb
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\Game.genruntimeconfig.cache
 C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\ref\Game.dll
+C:\Users\danie\Documents\FromHardware\Finish\Game\Game\obj\Debug\net6.0\Game.sourcelink.json

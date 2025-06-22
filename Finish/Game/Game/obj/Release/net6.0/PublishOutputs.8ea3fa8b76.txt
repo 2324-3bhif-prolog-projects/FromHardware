@@ -1,0 +1,5 @@
+C:\Users\danie\Documents\FromHardware\Finish\Game\publish\Game.exe
+C:\Users\danie\Documents\FromHardware\Finish\Game\publish\Game.dll
+C:\Users\danie\Documents\FromHardware\Finish\Game\publish\Game.deps.json
+C:\Users\danie\Documents\FromHardware\Finish\Game\publish\Game.runtimeconfig.json
+C:\Users\danie\Documents\FromHardware\Finish\Game\publish\Game.pdb

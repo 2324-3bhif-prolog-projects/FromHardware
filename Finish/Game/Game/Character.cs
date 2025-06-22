@@ -35,6 +35,7 @@ public class Character
     };
     
     public string Name { get; private set; }
+    public int Initiative { get; set; }
     public int MaxHP { get; set; }
     public int HP { get; set; }
     public int ArmorClass { get; set; }
@@ -58,23 +59,6 @@ public class Character
         Abilities = abilities;
         StatusEffects = new List<string>();
         Type = type;
-    }
-
-    public bool IsAlive()
-    {
-        return HP > 0;
-    }
-
-    public void MoveForward()
-    {
-        if (Position > 1)
-            Position--;
-    }
-
-    public void MoveBackward()
-    {
-        if (Position < 4)
-            Position++;
     }
 
     public void StressOut()

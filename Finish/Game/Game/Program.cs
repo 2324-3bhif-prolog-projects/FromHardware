@@ -123,10 +123,10 @@ public class Game
     {
         
         List<int> targetPosition = new List<int> { 1, 2 };
-        Ability veraSpada = new Ability("Vera Spada", "Ein schneller Hieb mit einer geweihten Klinge. (Moderater Schaden)", targetPosition, (11,18), AbilityType.Attack, 0);
-        Ability gewissenserweckung = new Ability("Gewissenserweckung", "Mit einem Ausruf göttlicher Erkenntnis zwingt Dante den Gegner, sich seiner Schuld zu stellen. (Weniger Schaden + Stress)",  targetPosition, (6,10), AbilityType.Attack,  20);
-        Ability gebetDerKlarheit = new Ability("Gebet der Klarheit", "Ein ruhiges Gebet stärkt Dantes Geist. (leichte Hilung)", targetPosition, (3,9), AbilityType.Heal, 0, BuffType.Hp);
-        Ability klarerBlick = new Ability("Klarer Blick", "Dante schließt kurz die Augen, richtet seinen Geist – und öffnet sie mit tödlicher Entschlossenheit. (Erhöht die Wahrscheinlichkeit von Angriffen)", targetPosition, (1, 2), AbilityType.Buff, 0, BuffType.Accuracy);
+        Ability veraSpada = new Ability("Vera Spada", "Ein schneller Hieb mit einer geweihten Klinge. (Moderater Schaden) (Target: x | x | o | o)", targetPosition, (12,19), AbilityType.Attack, 0);
+        Ability gewissenserweckung = new Ability("Gewissenserweckung", "Mit einem Ausruf göttlicher Erkenntnis zwingt Dante den Gegner, sich seiner Schuld zu stellen. (Weniger Schaden + Stress) (Target: x | x | x | o)",  targetPosition, (4,8), AbilityType.Attack,  20);
+        Ability gebetDerKlarheit = new Ability("Gebet der Klarheit", "Ein ruhiges Gebet stärkt Dantes Geist. (leichte Heilung)", targetPosition, (5,9), AbilityType.Heal, 0, BuffType.Hp);
+        Ability klarerBlick = new Ability("Klarer Blick", "Dante schließt kurz die Augen, richtet seinen Geist – und öffnet sie mit tödlicher Entschlossenheit. (Erhöht die Trefferquote)", targetPosition, (1, 2), AbilityType.Buff, 0, BuffType.Accuracy);
         List<Ability> abilitiesPlayer = new List<Ability> { veraSpada,  gewissenserweckung, gebetDerKlarheit, klarerBlick};
         Character dante = new Character("Dante", 100, 11, 1, abilitiesPlayer, CharacterType.Player);
         
@@ -318,7 +318,9 @@ public class Game
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Character enemy = KreaturDerHoffnungslosigkeit();
+                List<Ability> test1 = new List<Ability> { veraSpada };
+                Character test = new Character("test", 20, 10, 2, test1, CharacterType.Enemy);
+                List<Character> enemy = new List<Character> {KreaturDerHoffnungslosigkeit(), test};
                 Fight(enemy, dante, niederlageSumpf, kreaturDerHoffnungslosigkeitTod, kreaturDerHoffnungslosigkeitStress);
             }
             else
@@ -443,7 +445,8 @@ public class Game
         Ability richtHammer = new Ability("Richthammer", "Minos schwingt mit seinem Richterhammer. (Moderater Schaden)", targetPosition, (8, 11), AbilityType.Attack, 0);
         List<Ability> abilitiesMinos = new List<Ability> { richterSpruch, zungenurteil, richtHammer };
         Character minos = new Character("Minos", 200, 13, 1, abilitiesMinos, CharacterType.Boss);
-        Fight(minos, dante, niederlageMinos,minosTod, minosStress);
+        List<Character> minosReal = new List<Character> { minos };
+        Fight(minosReal, dante, niederlageMinos,minosTod, minosStress);
         
         Console.WriteLine("Kaum berührt sein lebloser Körper den Boden, beginnt die Erde unter deinen Füßen zu beben.");
         Console.WriteLine("Erst ein Zittern, dann ein Dröhnen – so heftig, dass die Mauern des uralten Gemäuers zu ächzen beginnen.");
@@ -569,7 +572,7 @@ public class Game
                 Console.WriteLine("Sie spricht nicht. Doch du fühlst, was sie will.");
                 Console.ReadKey(true);
                 Console.WriteLine("= Kampf gegen die Verlorene Versuchung =");
-                Character verloreneVersuchung = VerloreneVersuchung();
+                List<Character> verloreneVersuchung = new List<Character> { VerloreneVersuchung() };
                 Fight(verloreneVersuchung, dante, niederlageVerloreneVerlockung, verloreneVerlockungTod, verloreneVersuchungStress);
                 Console.WriteLine("Du gehst weiter. Doch dann, als du fast das Plateau erreichst, stürzt ein Felsbrocken vor dir herab – der Weg ist blockiert.");
                 Console.WriteLine("Verflucht.");
@@ -702,7 +705,7 @@ public class Game
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            Character karontheus = Karontheus();
+            List<Character> karontheus = new List<Character> { Karontheus() };
             Fight(karontheus, dante, niederlageKarontheus, karontheusTod, karontheusStress);
             Console.WriteLine("Der Boden beginnt zu beben. Der Sturm fällt in sich zusammen.");
             Console.WriteLine("Noch einmal spricht er:");
@@ -821,128 +824,264 @@ public class Game
             Console.WriteLine(zeile);
         }
     }
-
-    private static void Fight(Character enemy, Character dante, string[] death, string[] enemyDeath, string[] stressText)
+    
+    private static void Fight(List<Character> enemies, Character dante, string[] death, string[] enemyDeath, string[] stressText)
     {
-        int initPlayer = Roll(1, 20);
-        int initEnemy = Roll(1, 20);
-        int order = 0;
-        if (initPlayer > initEnemy)
+        List<Character> allParticipants = new List<Character>(enemies);
+        allParticipants.Add(dante);
+
+        // Initiative bestimmen
+        foreach (var character in allParticipants)
         {
-            order = 1;
+            character.Initiative = Roll(1, 20);
         }
-        else
-        {
-            order = 2;
-        }
-        
-        Console.WriteLine($"Du bist als {order}. an der Reihe.");
-        Console.WriteLine();
+
+        // Nach Initiative sortieren (höchste zuerst)
+        allParticipants = allParticipants.OrderByDescending(c => c.Initiative).ToList();
+
         bool isFinished = false;
 
-        if (order == 2)
+        while (!isFinished)
         {
-            Attack(enemy, dante);
-        }
-
-        do
-        {
-            try
+            foreach (var current in allParticipants.ToList())
             {
-                if (dante.HP > 0)
+                if (dante.HP <= 0)
                 {
-                    if (dante.Stress >= 100)
-                    {
-                        Console.WriteLine(
-                            "Dantes Atem geht flach, Schweiß glänzt auf seiner Stirn. Die Schatten in seinem Blick tanzen wild – Gedanken an Hoffnung schwinden.");
-                        Console.WriteLine();
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Ein Urteil naht.");
-                        Console.ResetColor();
-                        Console.WriteLine();
-                        Console.ReadKey(true);
-                        dante.StressOut();
-                        Console.ReadKey(true);
-                    }
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    TextOutput(death);
+                    Console.ResetColor();
+                    Environment.Exit(0);
+                }
 
-                    Console.WriteLine();
-                    Console.WriteLine(
-                        $"[Deine Position: {dante.Position} | HP: {dante.HP}/{dante.MaxHP} | Accuracy: {dante.Accuracy} | Stress: {dante.Stress} | DmgMod: {dante.DamageMod} | StressMod: {dante.StressMod}]");
-                    Console.WriteLine();
-                    Console.WriteLine("Was willst du tun?");
-                    for (int i = 0; i < dante.Abilities.Count; i++)
-                    {
-                        Console.WriteLine($"{i + 1}. {dante.Abilities[i].Name}");
-                    }
+                if (enemies.All(e => e.HP <= 0))
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    TextOutput(enemyDeath);
+                    Console.ResetColor();
+                    dante.Stress = 0;
+                    return;
+                }
 
-                    Console.WriteLine($"{dante.Abilities.Count() + 1}. Spell Informations");
-                    Console.WriteLine();
-                    int playerInput = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    if (playerInput == dante.Abilities.Count() + 1)
-                    {
-                        for (int i = 0; i < dante.Abilities.Count; i++)
-                        {
-                            Console.WriteLine(
-                                $"{i + 1}. {dante.Abilities[i].Name}: {dante.Abilities[i].Description}");
-                        }
+                if (current.HP <= 0) continue;
 
-                        Console.WriteLine();
-                    }
-                    else
-                    {
-                        if (playerInput == 3 || playerInput == 4)
-                        {
-                            dante.Abilities[playerInput - 1]
-                                .Use(dante, dante, dante.Abilities[playerInput - 1].Type, true);
-                        }
-                        else
-                        {
-                            dante.Abilities[playerInput - 1]
-                                .Use(dante, enemy, dante.Abilities[playerInput - 1].Type, true);
-                        }
-
-                        if (enemy.HP > 0)
-                        {
-                            if (enemy.Stress >= 100)
-                            {
-                                Console.ForegroundColor = ConsoleColor.White;
-                                TextOutput(stressText);
-                                Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("Ein Urteil naht.");
-                                Console.ResetColor();
-                                Console.WriteLine();
-                                Console.ReadKey(true);
-                                enemy.StressOut();
-                                Console.ReadKey(true);
-                            }
-
-                            Attack(enemy, dante);
-                        }
-                        else
-                        {
-                            isFinished = true;
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            TextOutput(enemyDeath);
-                            Console.ResetColor();
-                            dante.Stress = 0;
-                        }
-                    }
+                if (current == dante)
+                {
+                    PlayerTurn(dante, enemies, stressText);
                 }
                 else
                 {
-                    isFinished = true;
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    TextOutput(death);
-                    Environment.Exit(0);
+                    if (current.Stress >= 100)
+                    {
+                        Console.ForegroundColor = ConsoleColor.White;
+                        TextOutput(stressText);
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Ein Urteil naht.");
+                        Console.ResetColor();
+                        Console.ReadKey(true);
+                        current.StressOut();
+                        Console.ReadKey(true);
+                    }
+
+                    // Angriff auf Dante
+                    Attack(current, dante);
                 }
             }
-            catch(Exception)
-            {
-                Console.WriteLine($"Please enter a number that is not zero and under {dante.Abilities.Count()}!");
-            }
-        } while (!isFinished);
+        }
     }
+    
+    private static void PlayerTurn(Character dante, List<Character> enemies, string[] stressText)
+{
+    Console.WriteLine();
+    Console.WriteLine($"[Deine Position: {dante.Position} | HP: {dante.HP}/{dante.MaxHP} | Accuracy: {dante.Accuracy} | Stress: {dante.Stress} | DmgMod: {dante.DamageMod} | StressMod: {dante.StressMod}]");
+    Console.WriteLine("Was willst du tun?");
+    for (int i = 0; i < dante.Abilities.Count; i++)
+    {
+        Console.WriteLine($"{i + 1}. {dante.Abilities[i].Name}");
+    }
+    Console.WriteLine($"{dante.Abilities.Count() + 1}. Spell Informations");
+
+    int playerInput = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
+
+    if (playerInput == dante.Abilities.Count() + 1)
+    {
+        for (int i = 0; i < dante.Abilities.Count; i++)
+        {
+            if (dante.Abilities[i].Type == AbilityType.Attack)
+                Console.ForegroundColor = ConsoleColor.Red;
+            else if (dante.Abilities[i].Type == AbilityType.Buff)
+                Console.ForegroundColor = ConsoleColor.Blue;
+            else if (dante.Abilities[i].Type == AbilityType.Heal)
+                Console.ForegroundColor = ConsoleColor.Green;
+
+            Console.WriteLine($"{i + 1}. {dante.Abilities[i].Name}: {dante.Abilities[i].Description}");
+            Console.ResetColor();
+        }
+
+        Console.WriteLine();
+    }
+    else
+    {
+        Ability chosen = dante.Abilities[playerInput - 1];
+
+        Character target = null;
+        if (chosen.Type == AbilityType.Attack)
+        {
+            Console.WriteLine("Wähle ein Ziel:");
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i].HP > 0)
+                    Console.WriteLine($"{i + 1}. {enemies[i].Name} (HP: {enemies[i].HP})");
+            }
+
+            int targetIndex = Convert.ToInt32(Console.ReadLine()) - 1;
+            target = enemies[targetIndex];
+        }
+
+        dante.Abilities[playerInput - 1].Use(dante, target ?? dante, chosen.Type, true);
+    }
+
+    if (dante.Stress >= 100)
+    {
+        Console.WriteLine("Dantes Atem geht flach... Ein Urteil naht.");
+        dante.StressOut();
+    }
+}
+
+
+
+    /*private static void Fight(List<Character> enemies, Character dante, string[] death, string[] enemyDeath, string[] stressText)
+{
+    int initPlayer = Roll(1, 20);
+    int initEnemy = Roll(1, 20);
+    int order = initPlayer > initEnemy ? 1 : 2;
+
+    Console.WriteLine($"Du bist als {(order == 1 ? "Erster" : "Zweiter")} an der Reihe.");
+    Console.WriteLine();
+    bool isFinished = false;
+
+    if (order == 2)
+    {
+        foreach (var enemy in enemies.Where(e => e.HP > 0))
+        {
+            Attack(enemy, dante);
+        }
+    }
+
+    do
+    {
+        try
+        {
+            if (dante.HP > 0)
+            {
+                if (dante.Stress >= 100)
+                {
+                    Console.WriteLine("Dantes Atem geht flach, Schweiß glänzt auf seiner Stirn. Die Schatten in seinem Blick tanzen wild – Gedanken an Hoffnung schwinden.");
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Ein Urteil naht.");
+                    Console.ResetColor();
+                    Console.ReadKey(true);
+                    dante.StressOut();
+                    Console.ReadKey(true);
+                }
+
+                Console.WriteLine();
+                Console.WriteLine($"[Deine Position: {dante.Position} | HP: {dante.HP}/{dante.MaxHP} | Accuracy: {dante.Accuracy} | Stress: {dante.Stress} | DmgMod: {dante.DamageMod} | StressMod: {dante.StressMod}]");
+                Console.WriteLine();
+                Console.WriteLine("Was willst du tun?");
+                for (int i = 0; i < dante.Abilities.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {dante.Abilities[i].Name}");
+                }
+
+                Console.WriteLine($"{dante.Abilities.Count + 1}. Spell Informations");
+                Console.WriteLine();
+
+                int playerInput = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
+
+                if (playerInput == dante.Abilities.Count + 1)
+                {
+                    for (int i = 0; i < dante.Abilities.Count; i++)
+                    {
+                        var ability = dante.Abilities[i];
+                        if (ability.Type == AbilityType.Attack) Console.ForegroundColor = ConsoleColor.Red;
+                        else if (ability.Type == AbilityType.Buff) Console.ForegroundColor = ConsoleColor.Blue;
+                        else if (ability.Type == AbilityType.Heal) Console.ForegroundColor = ConsoleColor.Green;
+
+                        Console.WriteLine($"{i + 1}. {ability.Name}: {ability.Description}");
+                        Console.ResetColor();
+                    }
+                    Console.WriteLine();
+                }
+                else
+                {
+                    var selectedAbility = dante.Abilities[playerInput - 1];
+
+                    // Zielauswahl (außer Buffs/Heals auf sich selbst)
+                    Character target = dante;
+                    if (selectedAbility.Type == AbilityType.Attack)
+                    {
+                        Console.WriteLine("Wähle ein Ziel:");
+                        for (int i = 0; i < enemies.Count; i++)
+                        {
+                            if (enemies[i].HP > 0)
+                                Console.WriteLine($"{i + 1}. {enemies[i].Name} [Pos: {enemies[i].Position} | HP: {enemies[i].HP}]");
+                        }
+
+                        int targetIndex = Convert.ToInt32(Console.ReadLine()) - 1;
+                        target = enemies[targetIndex];
+                    }
+
+                    selectedAbility.Use(dante, target, selectedAbility.Type, true);
+
+                    // Gegnerzug
+                    foreach (var enemy in enemies.Where(e => e.HP > 0))
+                    {
+                        if (enemy.Stress >= 100)
+                        {
+                            Console.ForegroundColor = ConsoleColor.White;
+                            TextOutput(stressText);
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Ein Urteil naht.");
+                            Console.ResetColor();
+                            Console.WriteLine();
+                            Console.ReadKey(true);
+                            enemy.StressOut();
+                            Console.ReadKey(true);
+                        }
+
+                        Attack(enemy, dante);
+                    }
+
+                    // Siegbedingung
+                    if (enemies.All(e => e.HP <= 0))
+                    {
+                        isFinished = true;
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        TextOutput(enemyDeath);
+                        Console.ResetColor();
+                        dante.Stress = 0;
+                    }
+                }
+            }
+            else
+            {
+                isFinished = true;
+                Console.ForegroundColor = ConsoleColor.Red;
+                TextOutput(death);
+                Console.ReadKey(true);
+                Environment.Exit(0);
+            }
+        }
+        catch (Exception)
+        {
+            Console.WriteLine($"Bitte gib eine gültige Zahl ein (1–{dante.Abilities.Count})!");
+        }
+    } while (!isFinished);
+}*/
+
 
     public static void Attack(Character Enemy, Character Player)
     {

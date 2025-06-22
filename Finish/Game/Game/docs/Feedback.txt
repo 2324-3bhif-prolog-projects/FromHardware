@@ -1,0 +1,11 @@
+Satzumbruch wird direkt in wörtern gemacht (\n einbinden)
+
+Leerzeile nach jedem Readkey
+
+Verlorene Verlockung Kamp bug
+
+Tutorial Fight
+
+Checkpoints
+
+Alle Abzweigungen possible

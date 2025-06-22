@@ -133,7 +133,7 @@ public class Ability
                 }
                 else if(target.HP > 0)
                 {
-                    Console.WriteLine($"Der Gegner hat noch {target.HP} von {target.MaxHP} HP.");
+                    Console.WriteLine($"{target.Name} hat noch {target.HP} von {target.MaxHP} HP.");
                 }
             }
             else
