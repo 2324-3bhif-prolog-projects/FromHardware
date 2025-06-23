@@ -157,14 +157,14 @@ public class Game
         Console.WriteLine("Die Tür schließt sich hinter ihnen, dann hörst du leises Flüstern.");
         Console.ReadKey(true);
         Console.WriteLine(
-            "„Seit Beatrices Tod ist er ganz von seinen Alchemisten-Träumen eingenommen... Ich will nicht, dass er das Schwert aus der Hand legt – schließlich steht ihm bald der Ritterschlag bevor.“, hörst du Vater murmeln.");
+            "„Seit Beatrices Tod ist er ganz von seinen Alchemisten-Träumen eingenommen... Ich will nicht, dass er das Schwert aus der Hand legt – \nschließlich steht ihm bald der Ritterschlag bevor.“, hörst du Vater murmeln.");
         Console.WriteLine("„Er wird schon seinen Weg finden. Er hat Herz unser Junge, soviel ist zu sagen.“, antwortet Mutter leise.");
         Console.WriteLine(
-            "„Sie wissen doch gar nicht, wie es ist, jemanden zu verlieren…“ murmelst du, während du auf das halb verkohlte Rezept blickst. \nEin letztes Mal versuchst du, die geheimen Anweisungen umzudeuten, das Verhältnis der Zutaten zu ändern – vielleicht ist es der Atem der Nachtkerze? Oder ein Tropfen Tränenkraut? Es ist ein Trank, wie ihn nur wenige wagen zu denken – eine Essenz, von der alte Schriften raunen, dass sie einem den Weg in die Tiefe der neun Höllenkreise öffnen könnte.\n");
+            "„Sie wissen doch gar nicht, wie es ist, jemanden zu verlieren…“ murmelst du, während du auf das halb verkohlte Rezept blickst. \nEin letztes Mal versuchst du, die geheimen Anweisungen umzudeuten, das Verhältnis der Zutaten zu ändern – vielleicht ist es der Atem der Nachtkerze?\n Oder ein Tropfen Tränenkraut? Es ist ein Trank, wie ihn nur wenige wagen zu denken – \neine Essenz, von der alte Schriften raunen, dass sie einem den Weg in die Tiefe der neun Höllenkreise öffnen könnte.\n");
         Console.ReadKey(true);
         Console.WriteLine(
-            "Von alten Druiden, so heißt es, stammt die Legende. Von alten Druiden, die einst in verborgenen Hainen in den Tiefen ihrer Wälder mit den Schatten jenseits unserer Welt sprachen.");
-        Console.WriteLine("Die Wand zwischen Leben und Tod sei dort nur ein dünner Schleier, so sagt man, und man könne hindurchtreten, hinab in dunkle Gefilde, wenn man nur das Gleichgewicht der Elemente wahre.");
+            "Von alten Druiden, so heißt es, stammt die Legende. Von alten Druiden, die einst in verborgenen Hainen in den Tiefen ihrer Wälder mit den Schatten \njenseits unserer Welt sprachen.");
+        Console.WriteLine("Die Wand zwischen Leben und Tod sei dort nur ein dünner Schleier, so sagt man, und man könne hindurchtreten, hinab in dunkle Gefilde, \nwenn man nur das Gleichgewicht der Elemente wahre.");
         Console.WriteLine("„ES KLAPPT!“ rufst du plötzlich, erfüllt von neuem Leben.");
         Console.WriteLine("„Es sieht genauso aus wie im Buch beschrieben…“");
         Console.ReadKey(true);
@@ -178,7 +178,7 @@ public class Game
         Console.WriteLine("„Aah… mein Kopf…“, stöhnst du benommen.");
         Console.ReadKey(true);
         Console.WriteLine(
-            "Langsam öffnest du die Augen. Um dich herum nur dichter Wald – uralte Bäume mit gewundenen Ästen, deren Rinde wie verbrannt wirkt.  \nDie Welt scheint finster und rötliche Schlieren bluten vom Horizont in den dunklen Himmel über dir, als hätte sich ein Fluch über die Welt gelegt und sie der Gänze ihres Lichtes beraubt.");
+            "Langsam öffnest du die Augen. Um dich herum nur dichter Wald – uralte Bäume mit gewundenen Ästen, deren Rinde wie verbrannt wirkt.  \nDie Welt scheint finster und rötliche Schlieren bluten vom Horizont in den dunklen Himmel über dir,\nals hätte sich ein Fluch über die Welt gelegt und sie der Gänze ihres Lichtes beraubt.");
         Console.WriteLine("Plötzlich hörst du eine Stimme hinter dir.");
         Console.WriteLine("„Welch’ verirrte Seele zeigt sich hier?“");
         Console.ReadKey(true);
@@ -206,15 +206,15 @@ public class Game
                 Console.ReadKey(true);
                 Console.WriteLine("„Ein Freund, wenn es euch beliebt und ein Führer, sofern Ihr bereit dafür seid.“");
                 Console.WriteLine(
-                    "Langsam tritt die Gestalt aus dem Schatten der Bäume. Der Umhang, dessen Kragen locker ihren Hals gürtet, wirkt alt, wie aus einer anderen Zeit, und sein Blick ist ruhig, aber durchdringend.");
+                    "Langsam tritt die Gestalt aus dem Schatten der Bäume. Der Umhang, dessen Kragen locker ihren Hals gürtet, wirkt alt, wie aus einer anderen Zeit, \nund sein Blick ist ruhig, aber durchdringend.");
                 Console.WriteLine("„Nicht bin ich, jedoch war ich Mensch und Poet sogleich.“");
                 Console.ReadKey(true);
                 Console.WriteLine(
                     "Dein Atem stockt und die Intuition flüstert dir einen Namen zu.");
                 Console.WriteLine("“Virgil? Ihr…Virgil der Dichter?“");
-                Console.WriteLine("Nur ein sanftes Nicken kommt dir als Antwort zugute, ein Windhauch zieht durch die verdorben wirkenden Äste und das Rascheln der Blätter umfängt deinen Geist wie das Flüstern einer Geliebten.");
+                Console.WriteLine("Nur ein sanftes Nicken kommt dir als Antwort zugute, ein Windhauch zieht durch die verdorben wirkenden Äste und das Rascheln \nder Blätter umfängt deinen Geist wie das Flüstern einer Geliebten.");
                 Console.ReadKey(true);
-                Console.WriteLine("„Ihr seid gefallen. Gefallen in eine Welt jenseits der euren, doch Zufall war es keiner.“, seine Stimme wird ernster, „Nun sprecht, euer Begehr, Freund.“");
+                Console.WriteLine("„Ihr seid gefallen. Gefallen in eine Welt jenseits der euren, doch Zufall war es keiner.“, seine Stimme wird ernster, \n„Nun sprecht, euer Begehr, Freund.“");
                 Console.WriteLine(
                     "Du zögerst, in den Tiefen deines Geistes nach den richtigen Worten suchend.");
                 Console.WriteLine(
@@ -260,7 +260,7 @@ public class Game
         Console.ReadKey(true);
         Console.WriteLine("Du blickst dich langsam um, während der Nebel zwischen den Bäumen tanzt.");
         Console.WriteLine(
-            "Im Norden erkennst du vage die Umrisse eines Gebäudes – halb verborgen im Dunst, wie ein Schatten der Vergangenheit. Ist es eine alte Ruine? Vielleicht findest du dort etwas Nützliches... Doch aus derselben Richtung hallen verzerrte Schreie durch die Luft – gequält und fern, und doch beunruhigend nah.");
+            "Im Norden erkennst du vage die Umrisse eines Gebäudes – halb verborgen im Dunst, wie ein Schatten der Vergangenheit. Ist es eine alte Ruine? \nVielleicht findest du dort etwas Nützliches... Doch aus derselben Richtung hallen verzerrte Schreie durch die Luft – \ngequält und fern, und doch beunruhigend nah.");
         Console.WriteLine(
             "Im Osten führt ein schmaler Pfad weiter. Der Boden wirkt dort fester, und zwischen den krummen Bäumen liegt der Weg in bedrückender Stille.");
         Console.ReadKey(true);
@@ -284,11 +284,11 @@ public class Game
             {
                 answered = true;
                 Console.WriteLine("Du entscheidest dich, in Richtung Norden aufzubrechen.");
-                Console.WriteLine("Der Weg dorthin ist still, nur das Knacken deiner Schritte auf dem toten Laub begleitet dich. Als du näher kommst, bestätigt sich dein Verdacht – vor dir erhebt sich eine alte, verfallene Ruine. Die Mauern sind vom Zahn der Zeit gezeichnet, mit tiefen Rissen und überwachsenen Steinen.");
+                Console.WriteLine("Der Weg dorthin ist still, nur das Knacken deiner Schritte auf dem toten Laub begleitet dich. Als du näher kommst, \nbestätigt sich dein Verdacht – vor dir erhebt sich eine alte, verfallene Ruine. \nDie Mauern sind vom Zahn der Zeit gezeichnet, mit tiefen Rissen und überwachsenen Steinen.");
                 Console.WriteLine("Trotz der düsteren Stimmung spürst du einen Hauch von Neugier – vielleicht verbirgt sich hier etwas Nützliches?");
                 Console.ReadKey(true);
-                Console.WriteLine("Mit Bedacht trittst du ein. Das Innere ist leer und still, fast gespenstisch. Räume brechen an vielen Stellen ein, Wände sind von feuchtem Moos und seltsam leblosen Pflanzen überwuchert. Doch dann entdeckst du zwischen den Ranken etwas Metallisches.");
-                Console.WriteLine("Ein alter, aber erstaunlich gut erhaltener Helm liegt halb verborgen im Grün. Du hebst ihn auf – er ist schwer, robust, und könnte dir durchaus nützen.");
+                Console.WriteLine("Mit Bedacht trittst du ein. Das Innere ist leer und still, fast gespenstisch. Räume brechen an vielen Stellen ein, \nWände sind von feuchtem Moos und seltsam leblosen Pflanzen überwuchert. \nDoch dann entdeckst du zwischen den Ranken etwas Metallisches.");
+                Console.WriteLine("Ein alter, aber erstaunlich gut erhaltener Helm liegt halb verborgen im Grün. Du hebst ihn auf – er ist schwer, \nrobust, und könnte dir durchaus nützen.");
                 Console.ReadKey(true);
                 Console.WriteLine("Du setzt ihn auf und fühlst dich ein wenig sicherer.");
                 Console.WriteLine("Deine Rüstungsklasse wurde um 1 erhöht.");
@@ -303,11 +303,11 @@ public class Game
             {
                 answered = true;
                 Console.WriteLine("Du begibst dich mit der leisen Hoffnung, im Süden vielleicht etwas Verwertbares zu finden, in Richtung des düsteren Sumpfgebiets.");
-                Console.WriteLine("Der Boden wird weicher, bald schon schlammig. Deine Schritte sinken ein, und mit jedem Meter breitet sich ein schwerer Gestank aus – nach Teer, Moder und altem Blut.");
+                Console.WriteLine("Der Boden wird weicher, bald schon schlammig. Deine Schritte sinken ein, und mit jedem Meter breitet sich ein schwerer Gestank aus – \nnach Teer, Moder und altem Blut.");
                 Console.WriteLine("Doch plötzlich... Stimmen. Flüsternd, drohend, überall um dich herum.");
                 Console.ReadKey(true);
                 Console.WriteLine("„Was ist das…?“ flüsterst du dir selbst zu, während dein Blick suchend durch den Nebel gleitet.");
-                Console.WriteLine("Dann siehst du sie: Aus dem Morast erheben sich Gestalten – halb verwest, mit leeren Blicken und schleppenden Bewegungen. Ihre Augen flackern träge, als wäre jeder Funke Leben aus ihnen gewichen.");
+                Console.WriteLine("Dann siehst du sie: Aus dem Morast erheben sich Gestalten – halb verwest, mit leeren Blicken und schleppenden Bewegungen. \nIhre Augen flackern träge, als wäre jeder Funke Leben aus ihnen gewichen.");
                 Console.WriteLine("Kreaturen der Hoffnungslosigkeit.");
                 Console.ReadKey(true);
                 Console.WriteLine("Mit jedem Schritt, den sie auf dich zugehen, spürst du, wie sich Kälte in deinem Herzen ausbreitet.");
@@ -318,9 +318,7 @@ public class Game
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                List<Ability> test1 = new List<Ability> { veraSpada };
-                Character test = new Character("test", 20, 10, 2, test1, CharacterType.Enemy);
-                List<Character> enemy = new List<Character> {KreaturDerHoffnungslosigkeit(), test};
+                List<Character> enemy = new List<Character> {KreaturDerHoffnungslosigkeit()};
                 Fight(enemy, dante, niederlageSumpf, kreaturDerHoffnungslosigkeitTod, kreaturDerHoffnungslosigkeitStress);
             }
             else
@@ -330,7 +328,7 @@ public class Game
         } while (!answered);
         
         Console.WriteLine("Du begibst dich gemeinsam mit Virgil auf den Weg nach Osten.");
-        Console.WriteLine("Der schmale Pfad windet sich durch kahle Bäume, deren Äste wie knochige Finger in den düsteren Himmel ragen. Zwischen den Sträuchern leuchten seltsame Beeren – in Farben, die du nie zuvor gesehen hast. Du gehst vorsichtig, fast schon paranoid, mit jedem Rascheln in der Dunkelheit rechnend.");
+        Console.WriteLine("Der schmale Pfad windet sich durch kahle Bäume, deren Äste wie knochige Finger in den düsteren Himmel ragen. Zwischen den \nSträuchern leuchten seltsame Beeren – in Farben, die du nie zuvor gesehen hast. \nDu gehst vorsichtig, fast schon paranoid, mit jedem Rascheln in der Dunkelheit rechnend.");
         Console.WriteLine("Die Reise zieht sich endlos, als würde die Zeit selbst hier nicht weiterfließen.");
         Console.ReadKey(true);
         Console.WriteLine("Dann endlich – eine Lichtung. Vor euch: eine große Menschenmenge.");
@@ -339,7 +337,7 @@ public class Game
         Console.ReadKey(true);
         Console.WriteLine("„Die Nächsten, bitte!\"");
         Console.WriteLine("Eine schneidende Stimme ruft über den Platz.");
-        Console.WriteLine("„Das ist Charon“, flüstert Virgil dir zu. „Der Fährmann. Er bringt die Seelen über den Fluss Acheron – von der Vorhölle zu Minos, dem Richter. Wir sollten uns beeilen und an Bord gehen.“");
+        Console.WriteLine("„Das ist Charon“, flüstert Virgil dir zu. „Der Fährmann. Er bringt die Seelen über den Fluss Acheron – von der Vorhölle zu Minos, dem Richter. \nWir sollten uns beeilen und an Bord gehen.“");
         Console.ReadKey(true);
         Console.WriteLine("Ohne groß zu überlegen rufst du: „Hey! Ich möchte mitfahren!“");
         Console.WriteLine("Wie auf ein unsichtbares Kommando teilt sich die wartende Menge.");
@@ -349,20 +347,20 @@ public class Game
         Console.WriteLine("Er sieht dich ernst an. „Glaubst du wirklich, jemand zieht das Leid eines der Kreise dem Warten auf sein Urteil vor?“");
         Console.WriteLine("Du schluckst.");
         Console.ReadKey(true);
-        Console.WriteLine("Dann setzt du langsam einen Fuß vor den anderen und gehst auf die Fähre zu – bereit, dich dem zu stellen, was jenseits des Flusses liegt.");
+        Console.WriteLine("Dann setzt du langsam einen Fuß vor den anderen und gehst auf die Fähre zu – bereit, dich dem zu stellen, was \njenseits des Flusses liegt.");
         Console.WriteLine();
         
         Console.WriteLine("Kapitel 2: Urteil");
         Console.WriteLine("-----------------\n");
         Console.ReadKey(true);
 
-        Console.WriteLine("Das Wasser liegt still da – unnatürlich still. Kein Windhauch kräuselt die Oberfläche, kein Laut durchbricht die gespenstische Stille.");
+        Console.WriteLine("Das Wasser liegt still da – unnatürlich still. Kein Windhauch kräuselt die Oberfläche, \nkein Laut durchbricht die gespenstische Stille.");
         Console.WriteLine("Du hast noch nie zuvor eine Überfahrt erlebt, die so still, so bedrückend war.");
         Console.WriteLine("Kaum zwanzig Minuten vergehen, da erreicht ihr bereits das andere Ufer.");
         Console.ReadKey(true);
-        Console.WriteLine("Langsam steigst du aus dem Boot und betrittst einen morsch wirkenden Holzsteg. Jeder Schritt knarrt unter deinem Gewicht, als würde das Holz selbst vor dem fürchten, was vor dir liegt.");
+        Console.WriteLine("Langsam steigst du aus dem Boot und betrittst einen morsch wirkenden Holzsteg. Jeder Schritt knarrt unter deinem Gewicht, \nals würde das Holz selbst vor dem fürchten, was vor dir liegt.");
         Console.WriteLine("Dein Herz schlägt schneller. Deine Hände zittern leicht.");
-        Console.WriteLine("Vor dir erhebt sich ein dunkler Durchgang – der Eingang zur Halle des großen Richters: Minos – derjenige, der über die Verdammten urteilt und sie den Kreisen zuweist, die ihrem innersten Wesen entsprechen.");
+        Console.WriteLine("Vor dir erhebt sich ein dunkler Durchgang – der Eingang zur Halle des großen Richters: Minos – derjenige, der über die \nVerdammten urteilt und sie den Kreisen zuweist, die ihrem innersten Wesen entsprechen.");
         Console.ReadKey(true);
         Console.WriteLine("Du stehst nun an der Schwelle.");
         Console.WriteLine();
@@ -439,10 +437,10 @@ public class Game
         Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine("= Der Kampf gegen Minos geht los =");
-        int richterSpruchDamage = (int)(7 + (35 - 5) * ((double)dante.HP / dante.MaxHP));
+        int richterSpruchDamage = (int)(4 + (30 - 5) * ((double)dante.HP / dante.MaxHP));
         Ability richterSpruch = new Ability("Richterspruch", "Minos zeigt mit seiner Klauenhand auf einen Gegner – ein unsichtbares Gewicht lastet auf ihm. (Mehr schaden bei Voller HP)", targetPosition, (richterSpruchDamage, richterSpruchDamage), AbilityType.Attack, 0);
-        Ability zungenurteil = new Ability("Zungenurteil", "Aus seinem Maul fährt eine peitschende, schwarze Zunge. (Stress + wenig Schaden)", targetPosition, (4, 7), AbilityType.Attack, 11);
-        Ability richtHammer = new Ability("Richthammer", "Minos schwingt mit seinem Richterhammer. (Moderater Schaden)", targetPosition, (8, 11), AbilityType.Attack, 0);
+        Ability zungenurteil = new Ability("Zungenurteil", "Aus seinem Maul fährt eine peitschende, schwarze Zunge. (Stress + wenig Schaden)", targetPosition, (3, 6), AbilityType.Attack, 12);
+        Ability richtHammer = new Ability("Richthammer", "Minos schwingt mit seinem Richterhammer. (Moderater Schaden)", targetPosition, (7, 10), AbilityType.Attack, 0);
         List<Ability> abilitiesMinos = new List<Ability> { richterSpruch, zungenurteil, richtHammer };
         Character minos = new Character("Minos", 200, 13, 1, abilitiesMinos, CharacterType.Boss);
         List<Character> minosReal = new List<Character> { minos };
@@ -468,11 +466,11 @@ public class Game
 
             if (answer == "1" || answer == "1.")
             {
-                Console.WriteLine("Du rennst, so schnell du kannst, vorbei an zerbröckelnden Säulen und stürzenden Steinen – direkt auf den steinernen Sarg zu.");
+                Console.WriteLine("Du rennst, so schnell du kannst, vorbei an zerbröckelnden Säulen und stürzenden Steinen – \ndirekt auf den steinernen Sarg zu.");
                 Console.WriteLine("Ohne zu zögern wirfst du den Deckel auf, wirfst dich hinein und ziehst ihn mit zitternden Händen zu.");
-                Console.WriteLine("Finsternis umhüllt dich. Nur dein Atem bleibt – flach, hektisch, begleitet vom Beben des einstürzenden Anwesens über dir.");
+                Console.WriteLine("Finsternis umhüllt dich. Nur dein Atem bleibt – flach, hektisch, begleitet vom Beben des \neinstürzenden Anwesens über dir.");
                 Console.ReadKey(true);
-                Console.WriteLine("Dann beginnt der Boden unter dir zu vibrieren. Ein feines Knacken – dann ein Riss, der sich durch das Gestein zieht.");
+                Console.WriteLine("Dann beginnt der Boden unter dir zu vibrieren. Ein feines Knacken – dann ein Riss, \nder sich durch das Gestein zieht.");
                 Console.WriteLine("Plötzlich fühlst du es: Der Sarg fällt.");
                 Console.WriteLine("Du wirst mitgerissen in die Tiefe.");
                 Console.ReadKey(true);
@@ -485,7 +483,7 @@ public class Game
                 Console.WriteLine("Du richtest dich auf – benommen, aber unverletzt.");
                 Console.ReadKey(true);
                 Console.WriteLine("Als du dich umsiehst, erkennst du es sofort:");
-                Console.WriteLine("Dies ist nicht mehr das zerfallene Gemäuer von Minos. Der Himmel ist grau und ruhelos, die Luft schwer von Bedeutung.");
+                Console.WriteLine("Dies ist nicht mehr das zerfallene Gemäuer von Minos. Der Himmel ist grau und ruhelos, \ndie Luft schwer von Bedeutung.");
                 Console.WriteLine("Du bist weiter unten. Viel weiter.");
                 Console.ReadKey(true);
                 Console.WriteLine("Der nächste Kreis.");
@@ -500,7 +498,7 @@ public class Game
             {
                 Console.WriteLine("Du stürzt los – dein Blick fixiert die Tür hinter Minos’ lebloser Gestalt.");
                 Console.WriteLine("Da muss doch ein Ausgang sein, hoffst du fieberhaft.");
-                Console.WriteLine("Du erreichst die Tür, wirfst dich dagegen, rüttelst mit aller Kraft daran – aber sie bleibt verschlossen. Kein Spalt, kein Nachgeben.");
+                Console.WriteLine("Du erreichst die Tür, wirfst dich dagegen, rüttelst mit aller Kraft daran – aber sie bleibt verschlossen. \nKein Spalt, kein Nachgeben.");
                 Console.ReadKey(true);
                 Console.WriteLine("Mit zitternden Fingern tastest du die Wände ab, suchst panisch nach einem anderen Ausweg. Doch es ist zu spät.");
                 Console.WriteLine("Ein tiefes Grollen durchdringt den Boden – dann bricht er unter dir ein.");
@@ -510,7 +508,7 @@ public class Game
                 Console.WriteLine("Mit einem dumpfen Aufprall triffst du auf festen Untergrund.");
                 Console.WriteLine("Du lebst.");
                 Console.ReadKey(true);
-                Console.WriteLine("Atem flackert durch deine Lungen. Dein ganzer Körper schmerzt, als würdest du innerlich zerschlagen – aber du kannst dich bewegen.");
+                Console.WriteLine("Atem flackert durch deine Lungen. Dein ganzer Körper schmerzt, als würdest du innerlich zerschlagen – \naber du kannst dich bewegen.");
                 Console.WriteLine("(Du erleidest 10 Schaden.)");
                 dante.HP -= 10;
                 Console.WriteLine("Langsam richtest du dich auf und blickst dich um.");
@@ -519,7 +517,7 @@ public class Game
                 Console.WriteLine("Der Himmel ist bleiern und bewegt sich kaum – grau, schwer und von gespenstischer Ruhe.");
                 Console.WriteLine("Du bist tiefer gefallen. Viel tiefer.");
                 Console.ReadKey(true);
-                Console.WriteLine("Ein weites, flaches Land liegt vor dir, überzogen von fahlem Nebel, der sich über den Boden schleicht wie verlorene Gedanken.");
+                Console.WriteLine("Ein weites, flaches Land liegt vor dir, überzogen von fahlem Nebel, der sich über den Boden \nschleicht wie verlorene Gedanken.");
                 Console.WriteLine("In der Ferne erkennst du schemenhafte Gestalten – bleich, langsam, schweigend.");
                 Console.WriteLine("Ein vertrauter Schatten tritt aus dem Dunst.");
                 Console.ReadKey(true);
@@ -540,16 +538,16 @@ public class Game
         Console.WriteLine("-----------------");
         Console.ReadKey(true);
         Console.WriteLine();
-        Console.WriteLine("Ein kalter Wind zieht auf – plötzlich und voller Verlangen. Er trägt kein Leben in sich, nur flüsternde Stimmen, verhallte Seufzer, gebrochene Schwüre.");
-        Console.WriteLine("Du folgst Virgil durch die dichten Nebel, bis sich das graue Land langsam verändert. Die Ebene weicht steinernen Mauern, zerfetzen Tüchern, zerbrochenen Statuen von Liebenden in ewiger Umarmung – oder Trennung. Der Boden ist unruhig, als würde er atmen. Oder beben.");
+        Console.WriteLine("Ein kalter Wind zieht auf – plötzlich und voller Verlangen. Er trägt kein Leben in sich, \nnur flüsternde Stimmen, verhallte Seufzer, gebrochene Schwüre.");
+        Console.WriteLine("Du folgst Virgil durch die dichten Nebel, bis sich das graue Land langsam verändert. \nDie Ebene weicht steinernen Mauern, zerfetzen Tüchern, zerbrochenen Statuen von Liebenden in ewiger Umarmung – \noder Trennung. Der Boden ist unruhig, als würde er atmen. Oder beben.");
         Console.WriteLine("Und dann hörst du es: das Heulen.");
         Console.ReadKey(true);
-        Console.WriteLine("Nicht tierisch. Menschlich. Roh. Lust, Schmerz und Verzweifnung in einem einzigen Laut, der aus allen Richtungen kommt. Über dir wirbelt der Wind stärker – und du erkennst Gestalten, die durch die Luft geschleudert werden, von einem Sturm, der niemals endet. Liebende, verdammt, für ihre Begierden für alle Zeit voneinander getrennt zu sein.");
+        Console.WriteLine("Nicht tierisch. Menschlich. Roh. Lust, Schmerz und Verzweifnung in einem einzigen Laut, \nder aus allen Richtungen kommt. Über dir wirbelt der Wind stärker – und du erkennst Gestalten, \ndie durch die Luft geschleudert werden, von einem Sturm, der niemals endet.\nLiebende, verdammt, für ihre Begierden für alle Zeit voneinander getrennt zu sein.");
         Console.WriteLine("Virgil bleibt stehen.");
-        Console.WriteLine("„Dies ist der Ort derer, die sich der Leidenschaft mehr hingaben als der Vernunft. Der Sturm reißt sie auseinander, wie einst ihr Begehren sie verband.“");
+        Console.WriteLine("„Dies ist der Ort derer, die sich der Leidenschaft mehr hingaben als der Vernunft. \nDer Sturm reißt sie auseinander, wie einst ihr Begehren sie verband.“");
         Console.ReadKey(true);
         Console.WriteLine("Du schluckst schwer. Der Wind zerrt bereits an deinem Mantel.");
-        Console.WriteLine("Dies ist kein Ort für Zweifel – und doch flüstert etwas in deinem Inneren: Was wärst du bereit zu tun… um Beatrice wieder in deinen Armen zu halten?");
+        Console.WriteLine("Dies ist kein Ort für Zweifel – und doch flüstert etwas in deinem Inneren: \nWas wärst du bereit zu tun… um Beatrice wieder in deinen Armen zu halten?");
         Console.WriteLine();
 
         answered = false;
@@ -563,11 +561,11 @@ public class Game
 
             if (answer == "1" || answer == "1.")
             {
-                Console.WriteLine("Du trittst weiter. Der Wind weht wie das Flüstern ungezählter Lippen über die Ebene, der Nebel kriecht wie atmende Haut um deine Beine. Virgil bleibt hinter dir, seine Silhouette verschmilzt mit dem Grau.");
-                Console.WriteLine("Vor dir liegt ein schmaler Steg aus morschem Holz, der sich in eine dunkle Schlucht zieht. Jeder Schritt hallt durch die Leere. Der Sturm wird stärker – warm, fast lebendig, wie ein Atem. Du hörst kein Brüllen, sondern Seufzer… Lust… Qual.");
+                Console.WriteLine("Du trittst weiter. Der Wind weht wie das Flüstern ungezählter Lippen über die Ebene, der Nebel kriecht wie atmende Haut\n um deine Beine. Virgil bleibt hinter dir, seine Silhouette verschmilzt mit dem Grau.");
+                Console.WriteLine("Vor dir liegt ein schmaler Steg aus morschem Holz, der sich in eine dunkle Schlucht zieht. Jeder Schritt hallt durch die Leere. \nDer Sturm wird stärker – warm, fast lebendig, wie ein Atem. Du hörst kein Brüllen, sondern Seufzer… Lust… Qual.");
                 Console.WriteLine("Du zögerst. Etwas an diesem Wind schreckt dich ab. Ein Teil von dir will zurück – doch du zwingst dich, weiterzugehen.");
                 Console.ReadKey(true);
-                Console.WriteLine("Da – eine Gestalt schlägt wie vom Himmel gefallen auf den Steg. Weiblich. Nackt. Blass. Ihre Augen durchbohren dich mit tiefer Sehnsucht, die an deine eigenen Gedanken rührt.");
+                Console.WriteLine("Da – eine Gestalt schlägt wie vom Himmel gefallen auf den Steg. Weiblich. Nackt. Blass. Ihre Augen durchbohren dich mit \ntiefer Sehnsucht, die an deine eigenen Gedanken rührt.");
                 Console.WriteLine("Ein Schattenwesen. Die Verlorene Versuchung.");
                 Console.WriteLine("Sie spricht nicht. Doch du fühlst, was sie will.");
                 Console.ReadKey(true);
@@ -577,16 +575,16 @@ public class Game
                 Console.WriteLine("Du gehst weiter. Doch dann, als du fast das Plateau erreichst, stürzt ein Felsbrocken vor dir herab – der Weg ist blockiert.");
                 Console.WriteLine("Verflucht.");
                 Console.ReadKey(true);
-                Console.WriteLine("Du wendest dich zurück und entdeckst am Rand der Klippe etwas, das du vorher nicht bemerkt hast: eine fast überwucherte Felsöffnung, verborgen unter totem Efeu und versandeten Statuen. Dahinter – ein schmaler, kaum begehbarer Pfad, der sich in den Fels schraubt.");
+                Console.WriteLine("Du wendest dich zurück und entdeckst am Rand der Klippe etwas, das du vorher nicht bemerkt hast: \neine fast überwucherte Felsöffnung, verborgen unter totem Efeu und versandeten Statuen. Dahinter – \nein schmaler, kaum begehbarer Pfad, der sich in den Fels schraubt.");
                 Console.WriteLine("Mit pochendem Herzen folgst du ihm. Die Luft verändert sich. Warm. Schwer. Duftend. Die Stimmen verstummen. Stattdessen Stille – und eine Präsenz.");
-                Console.WriteLine("In einer natürlichen Grotte, halb aus Fels, halb aus uraltem Marmor gehauen, sitzt eine gefesselte Frau auf einem Thron. Ihre Ketten bestehen aus Licht und Schmerz zugleich. Die Wände erzählen Geschichten in verblassten Fresken – Götter, Begierde, verbotene Liebe.");
+                Console.WriteLine("In einer natürlichen Grotte, halb aus Fels, halb aus uraltem Marmor gehauen, sitzt eine gefesselte Frau auf einem Thron. \nIhre Ketten bestehen aus Licht und Schmerz zugleich. \nDie Wände erzählen Geschichten in verblassten Fresken – Götter, Begierde, verbotene Liebe.");
                 Console.ReadKey(true);
                 answered = true;
             }
             else if (answer == "2" || answer == "2.")
             {
-                Console.WriteLine("Der Sturm ist zu stark. Etwas daran schreckt dich ab – nicht nur körperlich. Es liegt ein Bann auf diesem Wind, der mehr mit sich trägt als nur Staub.");
-                Console.WriteLine("Du beginnst, den Klippenrand abzusuchen. Und tatsächlich – verborgen unter Efeu und zerfallenen Statuen findest du einen engen Pfad, der sich an der Felswand entlangwindet.");
+                Console.WriteLine("Der Sturm ist zu stark. Etwas daran schreckt dich ab – nicht nur körperlich. Es liegt ein Bann auf diesem Wind, \nder mehr mit sich trägt als nur Staub.");
+                Console.WriteLine("Du beginnst, den Klippenrand abzusuchen. Und tatsächlich – verborgen unter Efeu und zerfallenen Statuen findest \ndu einen engen Pfad, der sich an der Felswand entlangwindet.");
                 Console.WriteLine("Du folgst ihm, tief in eine Felsspalte hinein. Die Luft wird stickig, warm – der Sturm ist nicht mehr zu hören.");
                 Console.ReadKey(true);
                 Console.WriteLine("Im Inneren: eine alte Grotte. An den Wänden hängen verblasste Fresken von Göttern der Liebe und Lust.");
@@ -618,7 +616,7 @@ public class Game
             {
                 Console.WriteLine("Du trittst näher. Die Ketten der Muse schimmern und pulsieren.");
                 Console.WriteLine("„Du suchst den Weg, Sterblicher? Ich kenne ihn. Aber Wissen hat seinen Preis.“");
-                Console.WriteLine("Sie verlangt, dass du ihr einen Teil deiner eigenen Erinnerungen an Beatrice gibst, um den Weg zu offenbaren. Dies würde deine Bindung an Beatrice schwächen, aber den Weg ebnen.");
+                Console.WriteLine("Sie verlangt, dass du ihr einen Teil deiner eigenen Erinnerungen an Beatrice gibst, um den Weg zu offenbaren. \nDies würde deine Bindung an Beatrice schwächen, aber den Weg ebnen.");
                 Console.WriteLine();
                 bool answered2 = false;
                 do
@@ -657,8 +655,8 @@ public class Game
             else if (answer == "2" || answer == "2.")
             {
                 Console.WriteLine("Du versuchst, die leuchtenden Ketten der Muse zu berühren. Ein stechender Schmerz durchfährt deine Hand, doch du hältst stand.");
-                Console.WriteLine("Mit einem Aufschrei zersplittern die Lichtketten. Die Muse steht auf, ihre Augen leuchten vor Dankbarkeit – und einem Funken dunkler Macht.");
-                Console.WriteLine("„Du wagst es, mich zu befreien? Eine mutige, aber törichte Tat. Doch deine Entschlossenheit ist rein. Ich gewähre dir, was ich kann.“");
+                Console.WriteLine("Mit einem Aufschrei zersplittern die Lichtketten. Die Muse steht auf, \nihre Augen leuchten vor Dankbarkeit – und einem Funken dunkler Macht.");
+                Console.WriteLine("„Du wagst es, mich zu befreien? Eine mutige, aber törichte Tat. \nDoch deine Entschlossenheit ist rein. Ich gewähre dir, was ich kann.“");
                 Console.WriteLine("(Du erleidest 10 Schaden, +1 Treffsicherheit durch göttlichen Segen)");
                 Console.ReadKey(true);
                 dante.HP -= 10;
@@ -678,7 +676,7 @@ public class Game
         if (answer2 == "annehmen")
         {
             Console.WriteLine("Du folgst dem Hinweis der Muse und entdeckst einen verborgenen Riss in der Felswand.");
-            Console.WriteLine("Der Spalt ist eng, dunkel und feucht – doch hierher dringen weder Wind noch die unheilvollen Schreie, die du zuvor vernommen hast.");
+            Console.WriteLine("Der Spalt ist eng, dunkel und feucht – doch hierher dringen weder Wind noch die \nunheilvollen Schreie, die du zuvor vernommen hast.");
             Console.WriteLine("Nach einiger Zeit des Kriechens und Kletterns öffnet sich der Gang zu einem weiteren Durchlass.");
             Console.ReadKey(true);
         }
@@ -692,12 +690,12 @@ public class Game
             Console.WriteLine("Der Boden bebt leicht. Der Nebel reißt auf. Der warme, stöhnende Wind wird zum peitschenden Sturm.");
             Console.WriteLine("Du hörst Flügelschläge.");
             Console.ReadKey(true);
-            Console.WriteLine("Nicht weit entfernt erhebt sich aus einer Schlucht ein gewaltiger, humanoider Schatten mit geblähten Flügeln aus Haut und Rauch – gezeichnet von Narben, mit einem Blick, der tiefer reicht als Begierde.");
+            Console.WriteLine("Nicht weit entfernt erhebt sich aus einer Schlucht ein gewaltiger, humanoider Schatten mit geblähten Flügeln \aus Haut und Rauch – gezeichnet von Narben, mit einem Blick, der tiefer reicht als Begierde.");
             Console.WriteLine("Er ist keine Erscheinung. Kein Geist. Kein Verführer.");
             Console.WriteLine("Er ist der Wächter dieses Kreises.");
             Console.ReadKey(true);
             Console.WriteLine("Karontheus, der Herr der Verlorenen Leidenschaften");
-            Console.WriteLine("Einst ein Engel der Schönheit, jetzt verzerrt durch die Lust der Menschheit. Er trägt Ketten wie Schmuck, seine Worte reißen alte Wunden auf:");
+            Console.WriteLine("Einst ein Engel der Schönheit, jetzt verzerrt durch die Lust der Menschheit. \nEr trägt Ketten wie Schmuck, seine Worte reißen alte Wunden auf:");
             Console.WriteLine("„Du willst weiter? Dann zeige mir, wie stark dein Wille ist. Oder geh unter im Sturm der Sehnsucht!“");
             Console.WriteLine();
             Console.WriteLine("= Bosskampf: Karontheus =");
@@ -711,7 +709,7 @@ public class Game
             Console.WriteLine("Noch einmal spricht er:");
             Console.WriteLine("„Dein Herz… ist rein genug, um weiterzugehen. Doch die Tiefe wird dich mehr kosten, als du ahnst.“");
             Console.ReadKey(true);
-            Console.WriteLine("Hinter seinem zerschlagenen Leib öffnet sich ein uraltes, kreisrundes Portal aus Marmor, umwoben mit Symbolen von Venus, Eros – und Schmerz.");
+            Console.WriteLine("Hinter seinem zerschlagenen Leib öffnet sich ein uraltes, kreisrundes Portal aus Marmor, \numwoben mit Symbolen von Venus, Eros – und Schmerz.");
             Console.WriteLine("Ein gewaltiger Sog zieht dich hinein.");
             Console.WriteLine("Virgil tritt neben dich.");
             Console.ReadKey(true);
@@ -747,7 +745,7 @@ public class Game
         Console.WriteLine("Jetzt besitzen sie nichts… außer ihrer ewigen Habgier.“");
         Console.ReadKey(true);
         Console.WriteLine("Du erkennst nun:");
-        Console.WriteLine("Zwischen den Gängen und Felsen kriechen Menschen mit goldenen Masken, klammern sich an Erzbrocken, beißen in Steine, prügeln sich um rostige Ringe.");
+        Console.WriteLine("Zwischen den Gängen und Felsen kriechen Menschen mit goldenen Masken, klammern sich an Erzbrocken, \nbeißen in Steine, prügeln sich um rostige Ringe.");
         Console.WriteLine("Sie bemerken dich kaum. Ihr Blick ist leer, ihr Wunsch ewig.");
         Console.WriteLine();
         Console.ReadKey(true);
@@ -890,62 +888,140 @@ public class Game
     }
     
     private static void PlayerTurn(Character dante, List<Character> enemies, string[] stressText)
-{
-    Console.WriteLine();
-    Console.WriteLine($"[Deine Position: {dante.Position} | HP: {dante.HP}/{dante.MaxHP} | Accuracy: {dante.Accuracy} | Stress: {dante.Stress} | DmgMod: {dante.DamageMod} | StressMod: {dante.StressMod}]");
-    Console.WriteLine("Was willst du tun?");
-    for (int i = 0; i < dante.Abilities.Count; i++)
     {
-        Console.WriteLine($"{i + 1}. {dante.Abilities[i].Name}");
-    }
-    Console.WriteLine($"{dante.Abilities.Count() + 1}. Spell Informations");
-
-    int playerInput = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine();
-
-    if (playerInput == dante.Abilities.Count() + 1)
-    {
-        for (int i = 0; i < dante.Abilities.Count; i++)
+        bool done = true;
+        int playerInput;
+        do
         {
-            if (dante.Abilities[i].Type == AbilityType.Attack)
-                Console.ForegroundColor = ConsoleColor.Red;
-            else if (dante.Abilities[i].Type == AbilityType.Buff)
-                Console.ForegroundColor = ConsoleColor.Blue;
-            else if (dante.Abilities[i].Type == AbilityType.Heal)
-                Console.ForegroundColor = ConsoleColor.Green;
-
-            Console.WriteLine($"{i + 1}. {dante.Abilities[i].Name}: {dante.Abilities[i].Description}");
-            Console.ResetColor();
-        }
-
-        Console.WriteLine();
-    }
-    else
-    {
-        Ability chosen = dante.Abilities[playerInput - 1];
-
-        Character target = null;
-        if (chosen.Type == AbilityType.Attack)
-        {
-            Console.WriteLine("Wähle ein Ziel:");
-            for (int i = 0; i < enemies.Count; i++)
+            while (true)
             {
-                if (enemies[i].HP > 0)
-                    Console.WriteLine($"{i + 1}. {enemies[i].Name} (HP: {enemies[i].HP})");
+                Console.WriteLine();
+                Console.WriteLine(
+                    $"[Deine Position: {dante.Position} | HP: {dante.HP}/{dante.MaxHP} | Accuracy: {dante.Accuracy} | Stress: {dante.Stress} | DmgMod: {dante.DamageMod} | StressMod: {dante.StressMod}]");
+                Console.WriteLine("Was willst du tun?");
+                for (int i = 0; i < dante.Abilities.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {dante.Abilities[i].Name}");
+                }
+
+                Console.WriteLine($"{dante.Abilities.Count() + 1}. Spell Informations");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out playerInput) && playerInput >= 1 &&
+                    playerInput <= dante.Abilities.Count() + 1)
+                {
+                    break;
+                }
+                Console.WriteLine("Ungültige Eingabe. Bitte gib eine Zahl im richtigen Bereich ein.");
             }
 
-            int targetIndex = Convert.ToInt32(Console.ReadLine()) - 1;
-            target = enemies[targetIndex];
+            Console.WriteLine();
+
+            if (playerInput == dante.Abilities.Count() + 1)
+            {
+                for (int i = 0; i < dante.Abilities.Count; i++)
+                {
+                    if (dante.Abilities[i].Type == AbilityType.Attack)
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    else if (dante.Abilities[i].Type == AbilityType.Buff)
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                    else if (dante.Abilities[i].Type == AbilityType.Heal)
+                        Console.ForegroundColor = ConsoleColor.Green;
+
+                    Console.WriteLine($"{i + 1}. {dante.Abilities[i].Name}: {dante.Abilities[i].Description}");
+                    Console.ResetColor();
+                }
+
+                Console.WriteLine();
+            }
+            else
+            {
+                Ability chosen = dante.Abilities[playerInput - 1];
+
+                Character target = null;
+                int targetIndex = 0;
+                bool isInputOkay = false;
+                string input;
+                while(!isInputOkay) {
+                    if (chosen.Type == AbilityType.Attack)
+                    {
+                        if (enemies.Count > 1)
+                        {
+                            Console.WriteLine("Wähle ein Ziel:");
+                            for (int i = 0; i < enemies.Count + 1; i++)
+                            {
+                                if (i == enemies.Count)
+                                {
+                                    Console.WriteLine($"{i + 1}. Abbrechen");
+                                }
+                                else
+                                {
+                                    if (enemies[i].HP > 0)
+                                        Console.WriteLine($"{i + 1}. {enemies[i].Name} (HP: {enemies[i].HP})");
+                                }
+                            }
+
+                            input = Console.ReadLine();
+                        }
+                        else
+                        {
+                            input = "1";
+                        }
+
+                        if (int.TryParse(input, out targetIndex) && targetIndex >= 1 &&
+                            targetIndex <= enemies.Count + 1)
+                        {
+                            isInputOkay = true;
+                            targetIndex -= 1;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ungültige Eingabe. Bitte gib eine Zahl im richtigen Bereich ein.");
+                        }
+                    }
+
+                    if (targetIndex == enemies.Count)
+                    {
+                        done = false;
+                    }
+                    else
+                    {
+                        if (chosen.Type == AbilityType.Buff || chosen.Type == AbilityType.Heal)
+                        {
+                            target = dante;
+                            isInputOkay = true;
+                        }
+                        else
+                        {
+                            target = enemies[targetIndex];
+                            if (target.HP <= 0)
+                            {
+                                Console.WriteLine("Ungültiges Ziel");
+                                done = false;
+                                isInputOkay = false;
+                            }
+                        }
+                    }
+                }
+                if (targetIndex == enemies.Count)
+                {
+                    done = false;
+                }
+                else
+                {
+                    dante.Abilities[playerInput - 1].Use(dante, target, chosen.Type, true);
+                }
+            }
+        } while (!done);
+
+        if (dante.Stress >= 100)
+        {
+            Console.WriteLine("Dantes Atem geht flach...");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Ein Urteil naht.");
+            Console.ReadKey(true);
+            dante.StressOut();
         }
-
-        dante.Abilities[playerInput - 1].Use(dante, target ?? dante, chosen.Type, true);
-    }
-
-    if (dante.Stress >= 100)
-    {
-        Console.WriteLine("Dantes Atem geht flach... Ein Urteil naht.");
-        dante.StressOut();
-    }
 }
 
 
@@ -1097,8 +1173,8 @@ public class Game
         
         if (attackRoll >= Player.ArmorClass)
         {
-            damage = Ability.Roll(Enemy.Abilities[getAttack].PowerRange.min, Enemy.Abilities[getAttack].PowerRange.max);
-            stress = Enemy.Abilities[getAttack].StressEffect;
+            damage = Ability.Roll(Enemy.Abilities[getAttack - 1].PowerRange.min, Enemy.Abilities[getAttack - 1].PowerRange.max);
+            stress = Enemy.Abilities[getAttack - 1].StressEffect;
 
             Player.HP -= damage;
             Player.Stress += stress;
